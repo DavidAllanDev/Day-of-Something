@@ -1,24 +1,7 @@
 --
--- Table structure for table `DiaD`
+-- Dumping data for table `dayOf`
 --
-
-DROP TABLE IF EXISTS `DiaD`;
-CREATE TABLE IF NOT EXISTS `DiaD` (
-  `Cod` int(20) unsigned NOT NULL AUTO_INCREMENT,
-  `FullDia` char(5) DEFAULT NULL,
-  `Dia` char(2) DEFAULT NULL,
-  `Mes` char(2) DEFAULT NULL,
-  `DiaDesc` varchar(50) DEFAULT NULL,
-  `Confirmado` tinyint(1) DEFAULT '0' COMMENT '0 = Não | 1 = Sim',
-  `DiaAutor` varchar(40) DEFAULT NULL,
-  PRIMARY KEY (`Cod`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=840 ;
-
---
--- Dumping data for table `DiaD`
---
-
-INSERT INTO `DiaD` (`Cod`, `FullDia`, `Dia`, `Mes`, `DiaDesc`, `Confirmado`, `DiaAutor`) VALUES
+INSERT INTO `dayOf` (`Code`, `FullDay`, `Day`, `Month`, `DayDescription`, `Confirmed`, `DayAuthor`) VALUES
 (1, '01/01', '01', '01', 'Dia da Confraternização Universal', 1, 'ONU'),
 (2, '01/01', '01', '01', 'Dia Mundial da Paz', 0, NULL),
 (3, '04/01', '04', '01', 'Criação do Estado de Rondônia', 0, NULL),
@@ -820,4 +803,3 @@ INSERT INTO `DiaD` (`Cod`, `FullDia`, `Dia`, `Mes`, `DiaDesc`, `Confirmado`, `Di
 (837, '28/12', '28', '12', 'Dia do Salva-vidas', 0, NULL),
 (838, '31/12', '31', '12', 'Dia de São Silvestre', 0, NULL),
 (839, '31/12', '31', '12', 'Reveillon', 0, NULL);
-
